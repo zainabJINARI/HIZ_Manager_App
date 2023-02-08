@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="650.0" style="-fx-background-color: #35034F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TaskController">
+   <children>
+      <HBox prefHeight="60.0" prefWidth="650.0" style="-fx-background-color: black;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateX="20.0" translateY="10.0">
+               <image>
+                  <Image url="@../Images/daily-tasks.png" />
+               </image>
+            </ImageView>
+            <Label text="Tasks :" textFill="WHITE" translateX="40.0" translateY="13.0">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="idBack" mnemonicParsing="false" onAction="#ActionTask" prefHeight="27.0" prefWidth="60.0" style="-fx-background-color: #B2D6; -fx-border-color: gray;" text="Back" textFill="WHITE" translateX="450.0" translateY="15.0" />
+         </children>
+      </HBox>
+      <TextArea fx:id="idTextArea" layoutX="31.0" layoutY="76.0" prefHeight="107.0" prefWidth="270.0" promptText="Write Something about your task" />
+      <Button fx:id="idSave" layoutX="31.0" layoutY="242.0" mnemonicParsing="false" onAction="#ActionTask" prefHeight="34.0" prefWidth="60.0" style="-fx-background-color: black;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <TableView layoutX="319.0" layoutY="76.0" prefHeight="200.0" prefWidth="316.0">
+        <columns>
+          <TableColumn prefWidth="187.0" text="Title" />
+            <TableColumn prefWidth="62.0" text="Date" />
+          <TableColumn prefWidth="66.0" text="completed" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="idDate" layoutX="31.0" layoutY="202.0" promptText="Task Date" />
+   </children>
+</Pane>

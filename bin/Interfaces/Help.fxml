@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="730.0" style="-fx-background-color: #35034F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HelpController">
+   <children>
+      <HBox layoutX="-4.0" prefHeight="60.0" prefWidth="736.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateX="40.0" translateY="8.0">
+               <image>
+                  <Image url="@../Images/interrogation-mark.png" />
+               </image>
+            </ImageView>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="HELP :" textFill="#fffefe" translateX="60.0" translateY="10.0">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.021052632480859756" green="0.021052632480859756" red="0.021052632480859756" />
+               </color>
+            </DropShadow>
+         </effect>
+      </HBox>
+      <Button id="green" fx:id="idProvider" alignment="TOP_CENTER" layoutX="32.0" layoutY="91.0" mnemonicParsing="false" onAction="#ActionHomeController" prefHeight="322.0" prefWidth="149.0" style="-fx-background-color: black;" text="Manage Providers">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+               </color>
+            </DropShadow>
+         </effect>
+         <textFill>
+            <RadialGradient centerX="0.4537444755369346" centerY="0.5000000361240272" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.7114197611808777" green="0.307407408952713" red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.8105263113975525" green="0.324210524559021" red="0.6970526576042175" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Text fill="WHITE" layoutX="44.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This feature is used to manage the information of each provider" wrappingWidth="124.541748046875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="54.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Provider.png" />
+         </image>
+      </ImageView>
+      <Button id="green" fx:id="idProvider1" alignment="TOP_CENTER" layoutX="207.0" layoutY="91.0" mnemonicParsing="false" onAction="#ActionHomeController" prefHeight="322.0" prefWidth="149.0" style="-fx-background-color: black;" text="Manage PartyRooms">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+               </color>
+            </DropShadow>
+         </effect>
+         <textFill>
+            <RadialGradient centerX="0.4537444755369346" centerY="0.5000000361240272" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.7114197611808777" green="0.307407408952713" red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.8105263113975525" green="0.324210524559021" red="0.6970526576042175" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Text fill="WHITE" layoutX="212.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This feature is used to store the desired information about the rooms" wrappingWidth="139.4000244140624">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="257.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/wedding-arch.png" />
+         </image>
+      </ImageView>
+      <Button id="green" fx:id="idProvider11" alignment="TOP_CENTER" layoutX="380.0" layoutY="91.0" mnemonicParsing="false" onAction="#ActionHomeController" prefHeight="322.0" prefWidth="149.0" style="-fx-background-color: black;" text="Manage Clients">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+               </color>
+            </DropShadow>
+         </effect>
+         <textFill>
+            <RadialGradient centerX="0.4537444755369346" centerY="0.5000000361240272" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.7114197611808777" green="0.307407408952713" red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.8105263113975525" green="0.324210524559021" red="0.6970526576042175" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="424.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/manageclients.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="384.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This feature is used to manage customers by storing information about them and their events" wrappingWidth="139.4000244140624">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button id="green" fx:id="idProvider111" alignment="TOP_CENTER" layoutX="553.0" layoutY="91.0" mnemonicParsing="false" onAction="#ActionHomeController" prefHeight="322.0" prefWidth="149.0" style="-fx-background-color: black;" text="Manage Profil">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+               </color>
+            </DropShadow>
+         </effect>
+         <textFill>
+            <RadialGradient centerX="0.4537444755369346" centerY="0.5000000361240272" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.7114197611808777" green="0.307407408952713" red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.8105263113975525" green="0.324210524559021" red="0.6970526576042175" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <ImageView fitHeight="69.0" fitWidth="60.0" layoutX="598.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="558.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage profile is used to modify the user's information and write the stuff he needs to do" wrappingWidth="139.4000244140624">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="idBack" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ActionHomeController" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: #B2D6; -fx-border-color: gray;" text="Back" textFill="WHITE" translateX="620.0" translateY="6.0" />
+   </children>
+</Pane>

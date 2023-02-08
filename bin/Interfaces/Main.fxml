@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="716.0" style="-fx-background-color: #35034F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainController">
+   <children>
+      <HBox prefHeight="60.0" prefWidth="716.0" style="-fx-background-color: black;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="10.0">
+               <image>
+                  <Image url="@../Images/build.png" />
+               </image>
+            </ImageView>
+            <Label text="Build WorkSpace :" textFill="#fffafa" translateX="50.0" translateY="13.0">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="idProvider" alignment="BOTTOM_CENTER" layoutX="113.0" layoutY="142.0" mnemonicParsing="false" onAction="#ActionBuildWork" prefHeight="175.0" prefWidth="183.0" style="-fx-background-color: black;" text="Manage Providers">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.7098039388656616" green="0.30588236451148987" red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="0.7921637296676636" green="0.24327485263347626" red="0.821052610874176" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="idParty" alignment="BOTTOM_CENTER" layoutX="400.0" layoutY="142.0" mnemonicParsing="false" onAction="#ActionBuildWork" prefHeight="175.0" prefWidth="183.0" style="-fx-background-color: black;" text="Manage PartyRooms">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="0.5959418416023254" green="0.3100000023841858" red="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color blue="1.0" green="0.3100000023841858" red="0.9837539792060852" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button fx:id="idSkip" layoutX="583.0" layoutY="367.0" mnemonicParsing="false" onAction="#ActionBuildWork" prefHeight="34.0" prefWidth="63.0" style="-fx-background-color: black;" text="Skip" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <ImageView fitHeight="112.0" fitWidth="165.0" layoutX="149.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Provider.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="100.0" layoutX="442.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/wedding-arch.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
