@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ProfilController">
+   <children>
+      <HBox prefHeight="60.0" prefWidth="716.0" style="-fx-background-color: black;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" translateX="20.0" translateY="10.0">
+               <image>
+                  <Image url="@../Images/user.png" />
+               </image>
+            </ImageView>
+            <Label text="Manage Profil :" textFill="WHITE" translateX="40.0" translateY="13.0">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <SplitPane dividerPositions="0.29797979797979796" layoutY="60.0" prefHeight="397.0" prefWidth="716.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="354.0" prefWidth="172.0">
+               <children>
+                  <Button fx:id="idClients" layoutY="234.0" mnemonicParsing="false" onAction="#ActionProfileController" prefHeight="86.0" prefWidth="210.0" style="-fx-background-color: black;" text=" Manage Clients" textFill="WHITE">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+                           </color>
+                        </DropShadow>
+                     </effect></Button>
+                  <Button layoutY="319.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="210.0" style="-fx-background-color: #35034F;" text="Manage Profil" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="49.07" radius="11.7675" width="0.0">
+                           <color>
+                              <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+                           </color>
+                        </DropShadow>
+                     </effect></Button>
+                  <Button fx:id="idParty" layoutY="156.0" mnemonicParsing="false" onAction="#ActionProfileController" prefHeight="78.0" prefWidth="210.0" style="-fx-background-color: black;" text="Manage PartyRooms" textFill="WHITE" />
+                  <Button fx:id="idProvider" layoutY="78.0" mnemonicParsing="false" onAction="#ActionProfileController" prefHeight="78.0" prefWidth="210.0" style="-fx-background-color: black;" text="Manage Providers" textFill="WHITE" />
+                  <Button fx:id="idHome" mnemonicParsing="false" onAction="#ActionProfileController" prefHeight="78.0" prefWidth="210.0" style="-fx-background-color: black;" text="Home" textFill="WHITE" />
+                  <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="14.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/home.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="13.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Provider.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="13.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/wedding-arch.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="13.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/manageclients.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/user.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #35034F;">
+               <children>
+                  <Button fx:id="idPersoInfo" alignment="BOTTOM_CENTER" layoutX="45.0" layoutY="88.0" mnemonicParsing="false" onAction="#ActionProfileController" prefHeight="174.0" prefWidth="178.0" style="-fx-background-color: black;" text="Personal Informations">
+                     <textFill>
+                        <RadialGradient centerX="0.6629956283233239" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color blue="0.7098039388656616" green="0.30588236451148987" red="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color blue="0.8315789699554443" green="0.11395711451768875" red="0.7837374806404114" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+                           </color>
+                        </DropShadow>
+                     </effect></Button>
+                  <Button fx:id="idTasks" alignment="BOTTOM_CENTER" layoutX="275.0" layoutY="88.0" mnemonicParsing="false" onAction="#ActionProfileController" prefHeight="174.0" prefWidth="178.0" style="-fx-background-color: black;" text="Tasks">
+                     <textFill>
+                        <RadialGradient centerX="0.5088106062968922" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color blue="0.7098039388656616" green="0.30588236451148987" red="1.0" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color blue="0.8315789699554443" green="0.11395711451768875" red="0.7837374806404114" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+                           </color>
+                        </DropShadow>
+                     </effect></Button>
+                  <ImageView fitHeight="117.0" fitWidth="139.0" layoutX="60.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="125.0" fitWidth="117.0" layoutX="76.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/identity-card.png" />
+                     </image></ImageView>
+                  <ImageView fitHeight="125.0" fitWidth="108.0" layoutX="310.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/daily-tasks.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

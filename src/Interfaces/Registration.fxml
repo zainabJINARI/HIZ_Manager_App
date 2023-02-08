@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="716.0" style="-fx-background-color: #35034F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.RegistrationController">
+   <children>
+      <VBox layoutX="180.0" layoutY="128.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="694.0" style="-fx-background-color: #35034F;" translateX="-180.0">
+         <children>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="91.0" text="Full name :" textFill="WHITE" translateX="15.0" translateY="35.0">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldFullN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0" translateX="115.0" translateY="10.0" />
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="91.0" text="Email :" textFill="WHITE" translateX="350.0" translateY="-17.0">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0" translateX="470.0" translateY="-40.0" />
+            <TextField fx:id="textFieldPhone" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0" translateX="115.0" translateY="3.0" />
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="91.0" text="Phone num:" textFill="WHITE" translateX="15.0" translateY="-25.0">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldUsern" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0" translateX="470.0" translateY="-47.0" />
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="91.0" text="Username:" textFill="WHITE" translateX="350.0" translateY="-75.0">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="91.0" text="Password:" textFill="WHITE" translateX="15.0" translateY="-20.0">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="textFieldPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0" translateX="115.0" translateY="-45.0" />
+            <TextField fx:id="textFieldHint" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0" translateX="470.0" translateY="-70.0" />
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ActionHint" prefHeight="21.0" prefWidth="29.0" style="-fx-background-radius: 100; -fx-background-color: transparent;" text="(?)" textFill="WHITE" translateX="325.0" translateY="-94.0">
+               <font>
+                  <Font name="Arial Black" size="9.0" />
+               </font>
+            </Button>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="100.0" text="Hint Password:" textFill="WHITE" translateX="350.0" translateY="-115.0">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Label" />
+         </children>
+      </VBox>
+      <Button layoutX="579.0" layoutY="382.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ActionRegistration" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: BLACK;" text="Register" textFill="WHITE" translateY="9.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font></Button>
+      <HBox layoutX="-2.0" prefHeight="101.0" prefWidth="716.0" style="-fx-background-color: black;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="102.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LogoHiz.jpeg" />
+               </image>
+            </ImageView>
+            <Label prefHeight="38.0" prefWidth="197.0" text="REGISTRATION" textFill="WHITE" translateX="5.0" translateY="30.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button layoutX="458.0" layoutY="391.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ActionBack" prefHeight="38.0" prefWidth="91.0" style="-fx-background-color: BLACK;" text="Back" textFill="WHITE">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color blue="0.9686274528503418" green="0.7686274647712708" red="0.9411764740943909" />
+               </color>
+            </DropShadow>
+         </effect>
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelHint" layoutX="324.0" layoutY="346.0" prefHeight="25.0" prefWidth="345.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
