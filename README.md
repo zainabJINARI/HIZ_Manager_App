@@ -110,6 +110,10 @@ This interface has all the personnel information that the user entered previousl
 Tasks interface allows the user to stop forgetting things, and help him prioritise tasks by determining the delay of the task, and also provide a sense of accomplishment because of the in progress or done field. using this interfece the user can add a new task, modify it by selecting the field correspond to the data he want to change and save modifications by clicking on edit, and also delete the task by clicking on delete button.
 
 
+For more information about the app :
+zainabjinari@gmail.com
+
+
 
 
 
